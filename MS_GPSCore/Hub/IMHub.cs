@@ -74,7 +74,7 @@ namespace MS_GPSCore.Hub
                      EventName = "車輛GPS更新",
                      timestamp = DateTime.Now,
                      version = "v1.0",
-                      CarNo = "123-GH",
+                      CarNo = "123-ABC",
                       location = _Location
                 };
 

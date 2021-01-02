@@ -5,6 +5,9 @@ using System.Text;
 
 namespace MS_Events{
 
+    /// <summary>
+    /// GPS Event
+    /// </summary>
     public class GPSTriggerEvent : IntegrationEvent{
         public string Event_id { get; set; }
         public string EventName { get; set; } //這個Event名稱

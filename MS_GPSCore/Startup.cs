@@ -58,14 +58,6 @@ namespace MS_GPSCore
             {
                 endpoints.MapHub<IMHub>("/IMHub");
             });
-
-            //app.UseEndpoints(endpoints =>
-            //{
-            //    endpoints.MapGet("/", async context =>
-            //    {
-            //        await context.Response.WriteAsync("Hello World!");
-            //    });
-            //});
         }
     }
 }

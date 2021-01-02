@@ -17,7 +17,11 @@ namespace MS_Redis
             };
         }
 
-       //
+        /// <summary>
+        /// 當 GPSTriggerEvent 發生的時，用GPSTriggerEventHandler 來 Handler
+        /// </summary>
+        /// <param name="app"></param>
+        /// <returns></returns>
         public static IApplicationBuilder SubscribeToEvents(this IApplicationBuilder app)
         {
             IEventBus eventBus = app.ApplicationServices.GetRequiredService<IEventBus>();
@@ -25,6 +29,8 @@ namespace MS_Redis
             return app;
         }
 
+
+        //public 
 
         
     }

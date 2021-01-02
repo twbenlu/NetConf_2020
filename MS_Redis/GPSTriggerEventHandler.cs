@@ -14,9 +14,9 @@ namespace MS_Redis
 
         public async Task Handle(GPSTriggerEvent @event)
         {
-            ConnectionMultiplexer redis = ConnectionMultiplexer.Connect("192.168.237.128");
-            IDatabase db = redis.GetDatabase(0); ///取得那一個資料庫            
-            db.StringSet("中正區", @event.CarNo); ///設定Key與Value
+            ConnectionMultiplexer redis = ConnectionMultiplexer.Connect("連到你的Redis的連線字串");
+            IDatabase db = redis.GetDatabase(0); ///取得那一個資料庫                    
+                db.StringSet("中正區", @event.CarNo); ///設定Key與Value
             redis.Dispose(); ///釋放連線
 
         }

@@ -27,14 +27,13 @@ namespace MS_GPSCore.Model{
 
             UpdateResult result = _collection.UpdateOneAsync(
                  Builders<CarGPS>.Filter.Eq(x => x.CarNo, "216-GH"),
-                 Builders<CarGPS>.Update.Push<Location>(x => x.locations, _Location) //每次第一筆更新不到很正常
+                 Builders<CarGPS>.Update.Push<Location>(x => x.locations, _Location)
             ).Result;
 
             //再新增
             if (result.ModifiedCount == 0){
                 CarGPS _CarGPS = new CarGPS(){ 
-                     GsmNo = "0900123456",
-                     CarNo = "216-GH",
+                     CarNo = "123-ABC",
                      Time = DateTime.UtcNow,
                      locations = new List<Location>(){ _Location}                      
                 };
@@ -43,13 +42,11 @@ namespace MS_GPSCore.Model{
 
             //向 Event Bus 發出一個 Event
             GPSTriggerEvent _ge = new GPSTriggerEvent(){
-
+                 //在這邊發出你的 Event Bus 事件
             }; 
 
             _eventBus.Publish(_ge);
 
-
-            throw new NotImplementedException();
         }
     }
 

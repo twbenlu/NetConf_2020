@@ -50,7 +50,7 @@ namespace MS_Redis
 
             app.UseRouting();
             
-            //訂閱服務
+            //訂閱RabbitMQ Event Bus服務
             app.SubscribeToEvents();
 
 
