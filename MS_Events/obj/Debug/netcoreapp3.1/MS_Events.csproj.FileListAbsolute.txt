@@ -1,9 +1,0 @@
-D:\Events\NetConf\NetConf2020\MS_Events\bin\Debug\netcoreapp3.1\MS_Events.deps.json
-D:\Events\NetConf\NetConf2020\MS_Events\bin\Debug\netcoreapp3.1\MS_Events.dll
-D:\Events\NetConf\NetConf2020\MS_Events\bin\Debug\netcoreapp3.1\MS_Events.pdb
-D:\Events\NetConf\NetConf2020\MS_Events\obj\Debug\netcoreapp3.1\MS_Events.csprojAssemblyReference.cache
-D:\Events\NetConf\NetConf2020\MS_Events\obj\Debug\netcoreapp3.1\MS_Events.AssemblyInfoInputs.cache
-D:\Events\NetConf\NetConf2020\MS_Events\obj\Debug\netcoreapp3.1\MS_Events.AssemblyInfo.cs
-D:\Events\NetConf\NetConf2020\MS_Events\obj\Debug\netcoreapp3.1\MS_Events.csproj.CoreCompileInputs.cache
-D:\Events\NetConf\NetConf2020\MS_Events\obj\Debug\netcoreapp3.1\MS_Events.dll
-D:\Events\NetConf\NetConf2020\MS_Events\obj\Debug\netcoreapp3.1\MS_Events.pdb
